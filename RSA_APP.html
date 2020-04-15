@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Animation & Transition</title>
+   </head>
+	<head>
+  <style>
+
+    .slika1
+    {
+      position:absolute;
+      display: all;
+      top: 0px;
+      left: 0px;
+     
+    }
+    .slika2
+    {
+      position:absolute;
+      display: all;
+      top: 0px;
+      left: 50px;
+     
+    }
+    .slika3
+    {
+      position:absolute;
+      display: all;
+      top: 0px;
+      left: 100px;
+      
+    }
+    .slika4
+    {
+      position:absolute;
+      display: all;
+      top: 0px;
+      left: 150px;
+    
+    }
+
+.slika1{
+	border-style: outset;
+  	border-color: yellow;}
+.slika4{
+	border-style: groove;
+  	border-color: yellow;
+	animation-name:test1;
+	animation-duration: 1s;}
+.slika3{
+	border-style: outset;
+  	border-color: yellow;
+	animation-name:test2;
+	animation-duration: 1s;}
+.slika2{
+	border-style: groove;
+  	border-color: yellow;
+	animation-name:test3;
+	animation-duration: 1s;}
+
+/**.slika4:hover {animation-name: example1; animation: example1 3s infinite;
+}
+.slika3:hover {animation-name: example2; animation: example2 3s infinite;}
+.slika2:hover {animation-name: example3; animation:example3 3s infinite;}
+**/
+.slika4:hover, .slika3:hover, .slika2:hover{ 
+  animation-name: test1,test2, test3;
+  animation: example1 3s infinite, example2 3s infinite, example3 3s infinite;
+  animation-fill-mode: both; 
+}
+
+@keyframes test1 {
+  0%   {left:150px; top:0px;}
+  100%  {left:600px; top:0px;}
+  }
+
+@keyframes test2 {
+  0%   {left:100px; top:0px;}
+  100% {left:400px; top:0px;}
+  }
+
+@keyframes test3 {
+  0%   {left:100px; top:0px;}
+  100% {left:200px; top:0px;}
+  }
+
+  </style>
+</head>
+
+   <body>
+      <img src="download.jpeg" width="200" height="130" class="slika1">
+      <img src="download.jpeg" width="200" height="130"  class="slika2">
+      <img src="download.jpeg" width="200" height="130" class="slika3">
+      <img src="download.jpeg" width="200" height="130" class="slika4">
+      <p>TEST</p>
+
+<div></div>
+ 
+   </body>
+</html>
